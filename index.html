@@ -1,15 +1,27 @@
 <html><head>
     <meta charset="UTF-8">
-    <title>Many-to-Many Voice Conversion using Dual Speaker Embedding based Seq-to-Seq Acoustic Modeling with multi-speaker TTS  based data augmentation</title>
+    <title>Building Bilingual and Code-Switched Voice Conversion with Limited Training Data using Embedding Consistency Loss</title>
   <body>
     <div>
       <article>
-      <header> <h2>Many-to-Many Voice Conversion using Dual Speaker Embedding based Seq-to-Seq Acoustic Modeling with multi-speaker TTS  based data augmentation</h2> </header>
+      <header> <h2>Building Bilingual and Code-Switched Voice Conversion with Limited Training Data using Embedding Consistency Loss</h2> </header>
     </article>
-    <p><b>Paper:</b> <a href="">Submitted to Interspeech 2020</a></p>
-    <p><b>Authors</b>: Yaogen Yang, Zexin Cai, Ming Li</p>
-    <div><b>Abstract:</b>  The sequence-to-sequence voice conversion for generating high-fidelity speech has been confirmed in recent works. However, the sequence-to-sequence voice conversion requires a large amount of parallel data, which is impractical to obtain. This paper describe a many-to-many voice conversion model using conditional sequence-to-sequence neural network framework. The network maps a source speaker Mel-spectrogram directly to target speaker Mel-spectrogram with utilizing dual speaker embedding representation. An end-to-end multi-speaker TTS is used to synthesize parallel utterance for voice conversion training to solve limitation of parallel data. We manage to discriminate source and target speaker identity with using speaker encoder generates a fixed-dimensional embedding vector.
-A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domain waveform. The experimental results confirm that the proposed method outperformed one-to-many baseline system in Voice Conversion Challenge 2020 corpus. </div>
+    <p><b>Paper:</b> <a href="">Submitted to Interspeech 2021</a></p>
+    <p><b>Authors</b>: Yaogen Yang, Haozhe Zhang, Xiaoyi Qin, Shanshan Liang2, Huahua Cui4, Mingyang Xu4, Ming Li</p>
+    <div><b>Abstract:</b> Building cross-lingual voice conversion (VC) system for multiple speakers and multiple languages has been a challenge for
+a long time. This paper describes a parallel non-autoregressive
+network to achieve bilingual and code-switched voice conversion for multiple speakers when there are only mono-lingual
+corpora for each language. We achieve cross-lingual VC between Mandarin speech with multiple speakers and English
+speech with multiple speakers by applying bilingual bottleneck
+features. To boost voice cloning, we use an adversarial speaker
+classifier with a gradient reversal layer to remove the source
+speaker information from the output of encoder. In order to
+improve speaker similarity between reference speech and converted speech, we use an embedding consistency loss between
+the synthesized speech and its natural reference speech in our
+network. The evaluation results show that the proposed method
+can achieve high quality converted speech with mean opinion
+score (MOS) and good speaker similarity for both in-set and
+one-shot tests </div>
   <p>&nbsp;</p>
   <hr />
   <h3>&nbsp;</h3>
