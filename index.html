@@ -9,27 +9,26 @@
     <p><b>Paper:</b> <a href="">Submitted to Interspeech 2021</a></p>
     <p><b>Authors</b>: Yaogen Yang, Haozhe Zhang, Xiaoyi Qin, Shanshan Liang, Huahua Cui, Mingyang Xu, Ming Li</p>
     <div><b>Abstract:</b> Building cross-lingual voice conversion (VC) systems for multiple speakers and multiple languages has been a challenging task for a 
-long time. This paper describes a parallel non- autoregressive network to achieve bilingual and code-switched voice conversion for multiple speakers when there 
-are only mono-lingual corpora for each language. We achieve cross- lingual VC between Mandarin speech with multiple speakers and English speech with 
+long time. This paper describes a parallel non-autoregressive network to achieve bilingual and code-switched voice conversion for multiple speakers when there 
+are only mono-lingual corpora for each language. We achieve cross-lingual VC between Mandarin speech with multiple speakers and English speech with 
 multiple speakers by applying bilingual bottleneck features. To boost voice cloning performance, we use an adversarial speaker classifier with a gradient 
 reversal layer to reduce the source speaker’s information from the output of encoder. Furthermore, in order to improve speaker similarity between 
 reference speech and converted speech, we adopt an embedding consistency loss between the synthesized speech and its natural reference speech in our network. 
-Experimental results show that our proposed method can achieve high qual- ity converted speech with mean opinion score (MOS) around 4. 
-The conversion system performs well in terms of speaker simi- larity for both in-set speaker conversion and out-set-of one-shot conversion.</div>
+Experimental results show that our proposed method can achieve high quality converted speech with mean opinion score (MOS) around 4. 
+The conversion system performs well in terms of speaker similarity for both in-set speaker conversion and out-set-of one-shot conversion.</div>
   <p>&nbsp;</p>
   <hr />
   <h3>&nbsp;</h3>
-   <h3> We select a sentence, which is "There are many examples of this in France", for test before the VCC2020 evelation data  is released.</h3>
-   <h3>Task1</h3>    
+   <h3>In-set Test</h3>    
     <table>
       <thead>
       <tr></tr>  <tr></tr>  <tr></tr>
       <tr>
-        <th> source speaker speech </th> <th> converted speech</th> <th> target speaker speech </th>  
+        <th> source speaker speech </th> <th> target speaker speech</th> <th> FastVC speech </th> <th> FastVC-ECL speech </th>  
     </thead><tbody>
     <tr></tr>  <tr></tr><tr></tr>  <tr></tr>
     <tr>
-      <td colspan="5"><span><b>SEF1-to-TEF1</b></span></td>
+      <td colspan="5"><span><b>mono-lingual VC</b></span></td>
     </tr>
     <tr>
       <td><audio controls=""><source src="js/SEF1-E10052.wav" type="audio/wav"></audio></td>
@@ -37,7 +36,7 @@ The conversion system performs well in terms of speaker simi- larity for both in
       <td><audio controls=""><source src="js/TEF1-E10052.wav" type="audio/wav"></audio></td>
     </tr>
     <tr>
-      <td colspan="5"><span><b>SEF1-to-TEM1</b></span></td>
+      <td colspan="5"><span><b>cross-lingual VC</b></span></td>
     </tr>
     <tr>
       <td><audio controls=""><source src="js/SEF1-E10052.wav" type="audio/wav"></audio></td>
@@ -45,7 +44,7 @@ The conversion system performs well in terms of speaker simi- larity for both in
       <td><audio controls=""><source src="js/TEM1-E10052.wav" type="audio/wav"></audio></td>
     </tr>
      <tr>
-      <td colspan="5"><span><b>SEF1-to-TEF2</b></span></td>
+      <td colspan="5"><span><b>code-switch VC</b></span></td>
     </tr>
     <tr>
       <td><audio controls=""><source src="js/SEF1-E10052.wav" type="audio/wav"></audio></td>
